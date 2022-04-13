@@ -5,7 +5,7 @@ class ProductosApi {
     }
 
     listar(id) {
-        
+        return this.productos[id]
     }
 
     listarAll() {
@@ -13,7 +13,7 @@ class ProductosApi {
     }
 
     guardar(prod) {
-        
+        this.productos.push(prod)
     }
 
     actualizar(prod, id) {
